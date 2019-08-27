@@ -4,7 +4,7 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/moyuan?autoReconnect=true&useSSL=false&useUnicode=true&characterEncoding=UTF-8
     username: root
     password: 123456
-    driverClassName: com.mysql.cj.jdbc.Driver
+    driverClassName: com.mysql.jdbc.Driver
     druid:
       initialSize: 5
       minIdle: 5
