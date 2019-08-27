@@ -1,9 +1,9 @@
 spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
-    url: jdbc:mysql://127.0.0.1:3306/test_mybatis_db?autoReconnect=true&useSSL=false&useUnicode=true&characterEncoding=UTF-8
+    url: jdbc:mysql://127.0.0.1:3306/moyuan?autoReconnect=true&useSSL=false&useUnicode=true&characterEncoding=UTF-8
     username: root
-    password: 1234
+    password: 123456
     driverClassName: com.mysql.jdbc.Driver
     druid:
       initialSize: 5
@@ -23,7 +23,7 @@ mybatis:
 eureka:                                 #注册服务
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://localhost:8080/eureka/
  
 custom:
   username: guest-new
