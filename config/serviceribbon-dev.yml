@@ -36,3 +36,5 @@ custom:
   passwd: guest-new
   
 profile: test-new
+server:
+  port: 8584
