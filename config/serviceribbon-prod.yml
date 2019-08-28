@@ -1,0 +1,40 @@
+spring:
+  datasource:
+    #type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://127.0.0.1:3306/moyuan?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+    driverClassName: com.mysql.cj.jdbc.Driver
+    druid:
+      initialSize: 5
+      minIdle: 5
+      maxActive: 20
+      maxWait: 60000
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: SELECT 1
+      testWhileIdle: true
+      filters: stat,wall,log4j
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+ 
+mybatis:
+  type-aliases-package: com.scnu.springcloudconfigclient.domain
+  mapper-locations: classpath*:mapper/*.xml
+ 
+eureka:                                 #注册服务
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8080/eureka/
+ 
+custom:
+  username: guest-new
+  passwd: guest-new
+  
+profile: test-new
+server:
+  port: 8585
