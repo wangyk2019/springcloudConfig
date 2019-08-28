@@ -30,3 +30,16 @@ eureka:                                 #注册服务
 
 server:
   port: 9080
+
+ribbon:
+  ReadTimeout: 5000
+  ConnectTimeout: 5000
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: true
+        isolation:
+          thread:
+          timeoutInMilliseconds: 30000
