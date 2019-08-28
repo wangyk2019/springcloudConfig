@@ -43,3 +43,5 @@ hystrix:
         isolation:
           thread:
           timeoutInMilliseconds: 30000
+ 
+logging.config: classpath:log4j.xml
