@@ -1,6 +1,6 @@
 spring:
   datasource:
-    type: com.alibaba.druid.pool.DruidDataSource
+    #type: com.alibaba.druid.pool.DruidDataSource
     url: jdbc:mysql://sh-cdb-7yjkkc7a.sql.tencentcdb.com:62332/db_warn?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
     username: myy
     password: myyun@r@myy
