@@ -17,7 +17,7 @@ spring:
       filters: stat,wall,log4j
   jpa:
     database: mysql
-    #show-sql: true
+    show-sql: true
     hibernate:
       ddl-auto: update
     database-platform: org.hibernate.dialect.MySQL5Dialect
