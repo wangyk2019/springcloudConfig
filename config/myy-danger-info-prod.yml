@@ -35,9 +35,6 @@ eureka:                                 #注册服务
 #   username: guest-new
 #   passwd: guest-new
 
-server:
-  port: 8032
-
 ribbon:
   ReadTimeout: 5000
   ConnectTimeout: 5000
