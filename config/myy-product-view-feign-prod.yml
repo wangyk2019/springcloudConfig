@@ -27,8 +27,6 @@ eureka:                                 #注册服务
     serviceUrl:
       defaultZone: http://localhost:8030/eureka/
 
-server:
-  port: 8033
 
 ribbon:
   ReadTimeout: 5000
